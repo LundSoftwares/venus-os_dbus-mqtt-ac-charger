@@ -179,9 +179,23 @@ Now you can install and run the cloned driver. Should you need another instance 
 ### Compatibility
 It was tested on Venus OS Large ```v3.01``` on the following devices:
 
-RaspberryPi 3b+
+- RaspberryPi 3b+
+- Simulated AC Charger data sent from NodeRed
 
-Simulated AC Charger data sent from NodeRed
+### NodeRed Example code
+
+<details>
+<summary>Import into NodeRed runing on your VenusOS device for some simple testing</summary> 
+  
+```ruby
+[{"id":"36b8e7c267cde307","type":"tab","label":"Flow 1","disabled":false,"info":"","env":[]},{"id":"fee581eac3fab0c3","type":"mqtt out","z":"36b8e7c267cde307","name":"","topic":"chargers/ac","qos":"","retain":"","respTopic":"","contentType":"","userProps":"","correl":"","expiry":"","broker":"3cc159c0642d9663","x":730,"y":200,"wires":[]},{"id":"6e400e6ad609538c","type":"function","z":"36b8e7c267cde307","name":"function 1","func":"msg.payload=\n{\n    \"ac_charger\": {\n        \"ac_current\": 5,\n        \"ac_power\": 0,\n        \"ac_currentlimit\": 0,\n        \"state\": 4,\n        \"mode\": 1,\n        \"errorcode\": 0,\n        \"relaystate\": 0,\n        \"lowvoltagealarm\": 0,\n        \"highvoltagealarm\": 0,\n        \"DC0\": {\n            \"current\": 8,\n            \"voltage\": 12.5,\n            \"temperature\": 23\n        },\n        \"DC1\": {\n            \"current\": 10,\n            \"voltage\": 12.8,\n            \"temperature\": 12\n        },\n        \"DC2\": {\n            \"current\": 3,\n            \"voltage\": 12.85,\n            \"temperature\": 23\n        }\n    }\n}\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","libs":[],"x":520,"y":200,"wires":[["fee581eac3fab0c3"]]},{"id":"e64506d8e5edefe0","type":"inject","z":"36b8e7c267cde307","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"30","crontab":"","once":true,"onceDelay":"1","topic":"","payload":"","payloadType":"date","x":350,"y":200,"wires":[["6e400e6ad609538c"]]},{"id":"3cc159c0642d9663","type":"mqtt-broker","name":"","broker":"localhost","port":"1883","clientid":"","autoConnect":true,"usetls":false,"protocolVersion":"4","keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","birthMsg":{},"closeTopic":"","closeQos":"0","closePayload":"","closeMsg":{},"willTopic":"","willQos":"0","willPayload":"","willMsg":{},"userProps":"","sessionExpiry":""}]
+```
+</details>
+
+
+
+
+
 
 ### Screenshots
 
