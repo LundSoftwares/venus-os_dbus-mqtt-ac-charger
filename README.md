@@ -42,7 +42,7 @@ Copy or rename the config.sample.ini to config.ini in the dbus-mqtt-ac-charger f
         "DC0":{
             "current":0,
             "voltage":0,
-            "temperture":0
+            "temperature":0
         }
     }
 }
@@ -59,12 +59,12 @@ Copy or rename the config.sample.ini to config.ini in the dbus-mqtt-ac-charger f
         "DC0":{
             "current":0,
             "voltage":0,
-            "temperture":0
+            "temperature":0
         },
         "DC1": {
             "current": 0,
             "voltage": 0,
-            "temperture": 0
+            "temperature": 0
         }
     }
 }
@@ -81,17 +81,17 @@ Copy or rename the config.sample.ini to config.ini in the dbus-mqtt-ac-charger f
         "DC0":{
             "current":0,
             "voltage":0,
-            "temperture":0
+            "temperature":0
         },
         "DC1": {
             "current": 0,
             "voltage": 0,
-            "temperture": 0
+            "temperature": 0
         },
         "DC2": {
             "current": 0,
             "voltage": 0,
-            "temperture": 0
+            "temperature": 0
         }
     }
 }
@@ -116,17 +116,17 @@ Copy or rename the config.sample.ini to config.ini in the dbus-mqtt-ac-charger f
         "DC0":{
             "current":0,
             "voltage":0,
-            "temperture":0
+            "temperature":0
         },
         "DC1": {
             "current": 0,
             "voltage": 0,
-            "temperture": 0
+            "temperature": 0
         },
         "DC2": {
             "current": 0,
             "voltage": 0,
-            "temperture": 0
+            "temperature": 0
         }
     }
 }
@@ -181,6 +181,43 @@ It was tested on Venus OS Large ```v3.01``` on the following devices:
 
 RaspberryPi 3b+
 
+Simulated AC Charger data sent from NodeRed
+
 ### Screenshots
 
+<details>
+<summary>With DC0</summary> 
+  
+![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/08df5fcb-cdb0-42e7-b69e-6f9685fa8bb8)
 
+</details>
+
+<details>
+<summary>With DC0 and DC1</summary> 
+  
+![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/c4456520-15be-48da-8034-d37660c5b1a9)
+
+</details>
+
+<details>
+<summary>With DC0, DC1 and DC3</summary> 
+  
+![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/d72840b4-76bf-42a1-9ee6-663c65bdc992)
+
+</details>
+
+<details>
+<summary>Full</summary> 
+  
+![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/98f5a1ab-2a9c-459b-b5c7-4a32e0224e3e)
+![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/8b0b954e-501c-491d-81ca-013d82164842)
+
+
+</details>
+
+
+# Sponsor this project
+
+<a href="https://www.paypal.com/donate/?business=MTXQ49TG6YH36&no_recurring=0&item_name=Like+my+work?+%0APlease+buy+me+a+coffee...&currency_code=SEK">
+  <img src="https://pics.paypal.com/00/s/MjMyYjAwMjktM2NhMy00NjViLTg3N2ItMDliNjY3MjhiOTJk/file.PNG" alt="Donate with PayPal" />
+</a>
