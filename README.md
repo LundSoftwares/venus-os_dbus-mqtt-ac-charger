@@ -172,7 +172,7 @@ It's possible to have multiple instances, but it's not automated. Follow these s
 sed -i 's:dbus-mqtt-grid:'$driverclone':g' /data/etc/$driverclone/service/run
 sed -i 's:dbus-mqtt-grid:'$driverclone':g' /data/etc/$driverclone/service/log/run
 ```
-5. Change the ```device_nam0```e and increase the ```device_instance``` in the ```config.ini```
+5. Change the ```device_name``` and increase the ```device_instance``` in the ```config.ini```
 
 Now you can install and run the cloned driver. Should you need another instance just increase the number in step 1 and repeat all steps.
 
@@ -188,29 +188,29 @@ Simulated AC Charger data sent from NodeRed
 <details>
 <summary>With DC0</summary> 
   
-![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/08df5fcb-cdb0-42e7-b69e-6f9685fa8bb8)
+![Skärmbild 2023-08-19 101420](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/b75ccca2-c317-4f9f-b16a-1006872f8e03)
 
 </details>
 
 <details>
 <summary>With DC0 and DC1</summary> 
   
-![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/c4456520-15be-48da-8034-d37660c5b1a9)
+![Skärmbild 2023-08-19 101638](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/2043bdfe-2cb7-4403-92b1-1c92294a4394)
 
 </details>
 
 <details>
 <summary>With DC0, DC1 and DC3</summary> 
   
-![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/d72840b4-76bf-42a1-9ee6-663c65bdc992)
+![Skärmbild 2023-08-19 101735](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/096c135c-8ea8-45e9-83f9-0b517209e8fa)
 
 </details>
 
 <details>
 <summary>Full</summary> 
   
-![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/98f5a1ab-2a9c-459b-b5c7-4a32e0224e3e)
-![image](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/8b0b954e-501c-491d-81ca-013d82164842)
+![Skärmbild 2023-08-19 101950](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/3c6474e8-d473-4f8b-9769-5a1d6886e812)
+![Skärmbild 2023-08-19 103433](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger/assets/23386303/a770d74f-c88c-4f73-9b89-eb0f7fdb6e46)
 
 
 </details>
