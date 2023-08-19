@@ -1,8 +1,8 @@
-# dbus-mqtt-ac_charger - Emulates a physical AC Charger from info in MQTT data
+# dbus-mqtt-ac-charger - Emulates a physical AC Charger from info in MQTT data
 
 **First off, a big thanks to [mr-manuel](https://github.com/mr-manuel) that created a bunch of templates that made this possible**
 
-GitHub repository: [LundSoftwares/venus-os_dbus-mqtt-ac_charger](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac_charger)
+GitHub repository: [LundSoftwares/venus-os_dbus-mqtt-ac-charger](https://github.com/LundSoftwares/venus-os_dbus-mqtt-ac-charger)
 
 ### Disclaimer
 I'm not responsible for the usage of this script. Use on own risk! 
