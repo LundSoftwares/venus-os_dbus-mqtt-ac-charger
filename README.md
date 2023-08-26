@@ -154,7 +154,7 @@ The service status can be checked with svstat: ```svstat /service/dbus-mqtt-ac-c
 
 This will output somethink like ```/service/dbus-mqtt-ac-charger: up (pid 5845) 185 seconds```
 
-If the seconds are under 5 then the service crashes and gets restarted all the time. If you do not see anything in the logs you can increase the log level in ```/data/etc/dbus-mqtt-grid/dbus-mqtt-ac-charger.py``` by changing ```level=logging.WARNING``` to ```level=logging.INFO``` or ```level=logging.DEBUG```
+If the seconds are under 5 then the service crashes and gets restarted all the time. If you do not see anything in the logs you can increase the log level in ```/data/etc/dbus-mqtt-ac-charger/dbus-mqtt-ac-charger.py``` by changing ```level=logging.WARNING``` to ```level=logging.INFO``` or ```level=logging.DEBUG```
 
 If the script stops with the message ```dbus.exceptions.NameExistsException: Bus name already exists: com.victronenergy.grid.mqtt_ac-charger"``` it means that the service is still running or another service is using that bus name.
 
@@ -169,8 +169,8 @@ It's possible to have multiple instances, but it's not automated. Follow these s
 
 4. Fix the script references for service and log
 ```
-sed -i 's:dbus-mqtt-grid:'$driverclone':g' /data/etc/$driverclone/service/run
-sed -i 's:dbus-mqtt-grid:'$driverclone':g' /data/etc/$driverclone/service/log/run
+sed -i 's:dbus-mqtt-ac-charger:'$driverclone':g' /data/etc/$driverclone/service/run
+sed -i 's:dbus-mqtt-ac-charger:'$driverclone':g' /data/etc/$driverclone/service/log/run
 ```
 5. Change the ```device_name``` and increase the ```device_instance``` in the ```config.ini```
 
